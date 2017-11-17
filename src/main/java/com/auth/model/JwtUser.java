@@ -13,7 +13,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
-@Table(name = "clinic_users")
+@Table(name = "clinicusers")
 public class JwtUser implements UserDetails{
 	/**
 	 * 
