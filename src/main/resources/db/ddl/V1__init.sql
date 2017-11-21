@@ -17,6 +17,6 @@ CREATE TABLE `patient` (
   `referring_Physician` varchar(200) NOT NULL,
   `emergency_Contact` varchar(200) NOT NULL,
   `relationship` varchar(200) NOT NULL,
-                
+  `photo` longblob,            
   PRIMARY KEY (`patient_Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 
 
@@ -66,6 +67,13 @@ public class Patient {
 
 	@Column(name="relationship")
 	private String relationship;
+	
+	@Lob
+	@Column(name="photo")
+	private byte[] photo;
+		
+	
+	
 
 	public Patient() {
 
@@ -229,5 +237,12 @@ public class Patient {
 
 	public void setRelationship(String relationship) {
 		this.relationship = relationship;
+	}
+	public byte[] getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(byte[] photo) {
+		this.photo = photo;
 	}
 }
